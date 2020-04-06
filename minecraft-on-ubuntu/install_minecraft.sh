@@ -39,9 +39,9 @@ done
 # Install Java12
 echo oracle-java12-installer shared/accepted-oracle-license-v1-2 select true | /usr/bin/debconf-set-selections
 
-while ! echo y | apt-get install -y oracle-java12-installer; do
+while ! echo y | apt-get install -y oracle-java13-installer; do
     sleep 10
-    apt-get install -y oracle-java12-installer
+    apt-get install -y oracle-java13-installer
 done
 
 # create user and install folder
